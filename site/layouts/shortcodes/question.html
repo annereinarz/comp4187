@@ -1,7 +1,0 @@
-{{- $header := or (.Get 0) "Question" -}}
-<blockquote class="question">
-  <h3>{{- $header | markdownify -}}</h3>
-  <span>
-      {{ .Inner | markdownify }}
-  </span>
-</blockquote>
